@@ -13,4 +13,5 @@
 
 export function handleInput(input) {
     // 在此實現函式
+    return `Input is a ${typeof input}: ${input}`;
 }
