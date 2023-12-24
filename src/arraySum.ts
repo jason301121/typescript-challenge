@@ -15,3 +15,4 @@
 export function arraySum(numbers: number[]): number {
     // 在此實現函式
 }
+
