@@ -6,4 +6,21 @@
  */
 
 // 請在下方寫下你的程式碼
+interface Data {
+  UserId: number;
+  id: number;
+  title: string;
+  completed: boolean;
+}
 
+export function fetchData(url: string): Promise<Data> {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      resolve(data);
+    } catch (error) {
+      reject(error);
+    }
+  })
+};

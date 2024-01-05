@@ -9,6 +9,8 @@
  */
 export function formatDate(date: Date): string {
     // 請在此處寫下你的程式碼
+    const result = date.toISOString().split('T')[0];
+    return result;
 }
 
 /**
@@ -22,4 +24,5 @@ export function formatDate(date: Date): string {
  */
 export function roundNumber(num: number): number {
     // 請在此處寫下你的程式碼
+    return Math.round(num);
 }
